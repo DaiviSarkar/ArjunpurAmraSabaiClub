@@ -1,114 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<br lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjunpur Amra Sabai Club</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Arjunpur Amra Sabai Club</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111; /* Fallback color */
+      background-image: url('./assets/You\ are\ infinite\ within\ yourself.TIF'); 
+      background-size: cover; /* Scale the image to cover the entire background */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Prevent tiling */
+      color: white;
+      text-align: center;
+      
+    }
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(1px);  /* ← Hazy blur */
+        -webkit-backdrop-filter: blur(5px); /* ← For Safari support */
+        background-color: rgba(255, 255, 255, 0.2); /* ← Light overlay */
+        z-index: 0;
+      }
 
-        .container {
-            background-color: #fff;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            width: 100%;
-            text-align: center;
-        }
+      * {
+        position: relative;
+        z-index: 1;
+      }
 
-        h1, h2 {
-            color: #0056b3;
-            margin-bottom: 20px;
-        }
+    /* Top logo */
+    .logo {
+      margin-top: -30px;
+      
+      
+    }
 
-        .social-links, .contact-details, .direction-section {
-            margin-bottom: 20px;
-            text-align: left;
-        }
+    .logo img {
+      width: 100px;
+      border-radius: 50%;
+    }
 
-        .social-links a, .contact-details a {
-            display: block;
-            background-color: #007bff;
-            color: #fff;
-            padding: 12px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-bottom: 10px;
-            transition: background-color 0.3s ease;
-            font-weight: bold;
-        }
+    /* Title and description */
+    h1 {
+      font-size: 1.5rem;
+      margin: 10px auto;
+      font-family: "Red Hat Display", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+      color: yellow;
+      font-size: 50px;
+    }
 
-        .social-links a.instagram { background-color: #E1306C; }
-        .social-links a.facebook { background-color: #3b5998; }
-        .social-links a.youtube { background-color: #FF0000; }
-        .social-links a.google-maps { background-color: #4285F4; }
+    p {
+      font-size: 1.2rem;
+      margin: 10px 20px;
+      line-height: 1.5;
+      color: #fbfbfc;
+      font-weight:600;
+    }
 
-        .social-links a:hover, .contact-details a:hover {
-            opacity: 0.9;
-        }
+    /* Social icons row */
+    .social-icons {
+      margin: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
 
-        .direction-description p {
-            background-color: #e9e9e9;
-            padding: 15px;
-            border-radius: 5px;
-            white-space: pre-wrap;
-            text-align: left;
-        }
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      /* filter: invert(1); */
+    }
 
-        .contact-details span {
-            display: block;
-            margin-bottom: 10px;
-            padding: 12px;
-            background-color: #eee;
-            border-radius: 5px;
-            text-align: left;
-        }
-    </style>
+    /* Link cards */
+    .link-wrapper {
+      display: flex;
+      justify-content: center;
+   
+    }
+    .link-card {
+  background-color: #222;
+  margin: 5px auto;
+  padding: 0.3%;
+  border-radius: 8px;
+  width: 12%;
+  display: block; /* Change this from 'flex' */
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+    .location{
+       background-color: #949494;
+      margin: 2px auto;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .link-card img {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .link-card span {
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    .link-card:hover {
+      background-color: #333;
+    }
+    .para{
+      margin: 2px auto;
+      width:60%;
+    }
+    .contacts{
+      padding: 5px;
+      border-radius: 10px;
+      color: #e8e7e7;
+      background-color: rgb(10, 10, 10);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+  </style>
 </head>
-<body>
+<br>
 
-<div class="container">
-    <h1>Arjunpur Amra Sabai Club</h1>
-    
-    <div class="social-links">
-        <h2>Social Media Handles</h2>
-        <a href="https://www.instagram.com/arjunpuramrasabaiclub?igsh=MWFibnhweXczMjRhag%3D%3D&utm_source=qr" class="instagram">Instagram</a>
-        <a href="https://www.facebook.com/share/1C6xZ19kAL/?mibextid=wwXIfr" class="facebook">Facebook</a>
-        <a href="https://youtube.com/@arjunpuramrasabaiclub?si=oyMEDzp-Y3qGnyC9" class="youtube">YouTube</a>
-    </div>
+  <!-- Logo -->
+  <div class="logo">
+    <img src="./assets/cropped_circle_image.png"  alt="Arjunpur Logo">
+  </div>
 
-    <div class="direction-section">
-        <h2>Direction</h2>
-        <a href="https://www.google.com/maps" class="google-maps">📍 Google Maps</a>
-        <div class="direction-description">
-            <p>
-Metro: Dum Dum (Gate 4) → Bus/auto to Emami City → Walk 500m to Arjunpur Amra Sabai Club.
-
-Railway: Dum Dum Jn → Same as metro.
-
-Bus: From Teghoria Stop → Rickshaw/walk to club (Taltala).
-            </p>
-        </div>
-    </div>
-    
-    <div class="contact-details">
-        <h2>Contact Details</h2>
-        <span>Mail ID: <a href="mailto:arjunpuramrasabaiclub6@gmail.com">arjunpuramrasabaiclub6@gmail.com</a></span>
-        <span>Contact Number: <a href="tel:8585004135">8585004135</a></span>
-    </div>
-
+  <!-- Title -->
+  <h1>Arjunpur Amra Sabai Club</h1>
+  <div class="para">
+    <p>
+    Arjunpur Amra Sabai Club – a non-profit hub driving social & cultural initiatives, 
+    fostering art, and hosting North Kolkata’s most iconic Durga Puja.
+  </p>
 </div>
+  
+
+  <!-- Social Icons -->
+   <h5> Social Media :</h5>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/arjunpuramrasabaiclub?igsh=MWFibnhweXczMjRhag%3D%3D&utm_source=qr"><img src="./assets/instagram.jpeg" alt="Instagram"></a>
+    <!-- <a href="#"><img src="./assets/whatsapp.jpeg" alt="WhatsApp"></a> -->
+    <a href="https://youtube.com/@arjunpuramrasabaiclub?si=oyMEDzp-Y3qGnyC9"><img src="./assets/youtube.png" alt="YouTube"></a>
+    <a href="https://www.facebook.com/share/1C6xZ19kAL/?mibextid=wwXIfr"><img src="./assets/fb.png" alt="Facebook"></a>
+  </div>
+
+  <!-- Link Cards -->
+  <!-- <a href="#" class="link-card">
+    <img src="logo.png" alt="WhatsApp">
+    <span>WhatsApp</span>
+  </a>
+
+  <a href="https://www.instagram.com/arjunpuramrasabaiclub?igsh=MWFibnhweXczMjRhag%3D%3D&utm_source=qr" class="link-card">
+    <img src="instagram.png" alt="Instagram">
+    <span>Instagram</span>
+  </a>
+
+  <a href="https://youtube.com/@arjunpuramrasabaiclub?si=oyMEDzp-Y3qGnyC9" class="link-card">
+    <img src="youtube.png" alt="YouTube">
+    <span>YouTube</span>
+  </a>
+
+  <a href="https://www.facebook.com/share/1C6xZ19kAL/?mibextid=wwXIfr" class="link-card">
+    <img src="facebook.png" alt="Facebook">
+    <span>Facebook</span>
+  </a> -->
+<h3> ------ Location Guide: Puja Mandap ------</h3>
+  <div class="link-wrapper">
+  <a href="https://maps.app.goo.gl/sfxwksrXHirfop2v8" class="link-card">
+    📍 Google Map
+  </a>
+</div>
+</br>
+    <div class="location">Metro: Dum Dum (Gate 4) → Bus/auto to Emami City → Walk 500m to Arjunpur Amra Sabai Club.
+    </br>Railway: Dum Dum Jn → Same as metro.
+  </br>Bus: From Teghoria Stop → Rickshaw/walk to club (Taltala).</div>
+    
+  <h3> * Contact Details *</h3>
+  <a href="tel:+918585004135" class="contacts" >📞 8585004135</a>
+</br>
+</br>
+<a href="mailto:arjunpuramrasabaiclub6@gmail.com" class="contacts" >✉️ arjunpuramrasabaiclub6@gmail.com</a>
+
+  
 
 </body>
 </html>
